@@ -23,7 +23,7 @@ class App < Sinatra::Base
     @user_num1 = params[:num1]
     @user_num2 = params[:num2]
     binding.pry
-    @user_num1 * @user_num2
+    @user_num1.to_i * @user_num2.to_i
   end
 
 
